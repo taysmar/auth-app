@@ -32,8 +32,6 @@ export default props => {
                 }
             }}
                 />
-
-
             <Stack.Screen
                 name="UserForm"
                 component={UserForm}

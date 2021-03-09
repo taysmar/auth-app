@@ -1,26 +1,30 @@
 export default [
     {
-        id: 1,
-        name: 'João Silva',
-        email: 'josilva@empmail.com',
-        avatarUrl: 'https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_960_720.png'
+      id: 1,
+      name: 'João Silva',
+      email: 'josil@empmail.com',
+      avatarUrl:
+        'https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_960_720.png',
     },
     {
-        id: 2,
-        name: 'Julia Silva',
-        email: 'jusilva@empmail.com',
-        avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/20/05/36/avatar-1606914_960_720.png'
+      id: 2,
+      name: 'Mariana Aguiar',
+      email: 'riamasil@empmail.com',
+      avatarUrl:
+        'https://cdn.pixabay.com/photo/2016/04/01/12/11/avatar-1300582_960_720.png',
     },
     {
-        id: 3,
-        name: 'José Silva',
-        email: 'josesilva@empmail.com',
-        avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/31/11/54/user-1633249_960_720.png'
+      id: 3,
+      name: 'Julio Fragoso',
+      email: 'juliafral@empmail.com',
+      avatarUrl:
+        'https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_960_720.png',
     },
     {
-        id: 4,
-        name: 'Maria Silva',
-        email: 'marsilva@empmail.com',
-        avatarUrl: 'https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png'
-    }
-]
+      id: 4,
+      name: 'Rafael Monteiro',
+      email: 'rafamontee@empmail.com',
+      avatarUrl:
+        'https://cdn.pixabay.com/photo/2016/11/01/21/11/avatar-1789663_960_720.png',
+    },
+  ];
