@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
 import { View, FlatList, Alert } from 'react-native'
 import { ListItem, Button, Avatar } from 'react-native-elements'
-import users from '../data/users'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import UsersContext from '../context/UsersContext';
 
 
 
 export default props => {
+
+    const { state, dispatch } = useContext(UsersContext)
 
     function confirmUserDeletion(user) {
         Alert.alert('Excluir Usuário', 'Deseja excluir o usuário?', [
@@ -28,8 +30,7 @@ export default props => {
     function getActions(user) {
         return (
             <>
- 
-              <Button
+                <Button
                     onPress={() => props.navigation.navigate('UserForm', user)}
                     type="clear"
                     icon={<Icon name="edit" size={25} color="orange" />}
@@ -42,7 +43,6 @@ export default props => {
             </>
         )
     }
-
     function getUserItem({ item: user }) {
         return (                 
             <ListItem>
@@ -74,7 +74,7 @@ export default props => {
         <View>
             <FlatList
                 keyExtractor={user => user.id.toString()}
-                data={users}
+                data={state.users}
                 renderItem={getUserItem}
             />
         </View>
